@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+ :root {
+    --body-color: #f6f8f6;
+    --dark-blue: darkblue;
+    --text-white: #FFF;
+    --ff-poppins: 'Poppins', sans-serif;
+    --text-dark-blue: darkblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: var(--ff-poppins);
+}
+
+header {
+    font-family: var(--ff-poppins);
+    background-color: var(--dark-blue);
+    color: var(--text-white);
+    padding: 16px 0;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.card-header {
+    /* padding-inline: 60px; */
+    border: 0;
+}
+
+.card-header .screen-name-and-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 2rem;
+}
+
+.card-header .screen-name-and-logo span {
+    font-family: var(--ff-poppins);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.card-header .screen-name-and-logo img {
+    width: auto;
+    height: 50px;
+}
+
+.card-body {
+    padding-inline: 3rem;
+}
+
+.table-responsive {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 0.876rem;
+}
+
+.table-responsive caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+.table-responsive tr {
+    border-bottom: 1px solid #ddd;
+    padding: .35em;
+}
+
+.table-responsive tbody tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+.table-responsive th,
+.table-responsive td {
+    padding: .625em;
+    text-align: center;
+}
+
+.table-responsive th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .table-responsive {
+        border: 0;
+    }
+    .table-responsive caption {
+        font-size: 1.3em;
+    }
+    .table-responsive thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    .table-responsive tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+    .table-responsive td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    .table-responsive td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .table-responsive td:last-child {
+        border-bottom: 0;
+    }
+}
+
+.btn-am,
+.btn-am:hover {
+    background-color: var(--dark-blue);
+    color: var(--text-white);
+    border: 0;
+}
+
+.btn {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(26, 26, 26, 0.488);
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#loading span {
+    background: var(--dark-blue);
+    padding: 3px 9px;
+    border-radius: 6px;
+    margin-top: 1.23rem;
+    color: var(--text-white);
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
