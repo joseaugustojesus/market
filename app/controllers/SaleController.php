@@ -16,7 +16,7 @@ class SaleController extends Controller
      */
     public function index()
     {
-        return $this->view('restricted/sales/index', []);
+        return $this->view('restricted/sales/interface_sales', []);
     }
 
 

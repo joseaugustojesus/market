@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mercado Sto. Antônio</title>
+  <title>Mercado 2 Irmãos</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <!-- <link rel="stylesheet" href="<?= css_path('/shared/bootstrap.css') ?>" /> -->
@@ -35,7 +35,7 @@
       <div class="top">
         <div class="logo">
           <img src="<?= image_path('logo.png') ?>" alt="">
-          <h2>Sto. <span class="perigo">Antônio</span></h2>
+          <h2>2 <span class="perigo">Irmãos</span></h2>
         </div>
         <div class="close" id="close-btn">
           <span class="material-icons-sharp">
@@ -109,7 +109,7 @@
           </span>
           <h3>Add Produto</h3>
         </a> -->
-        <a href="#">
+        <a href="<?= route('logout') ?>">
           <span class="material-icons-sharp">
             logout
           </span>

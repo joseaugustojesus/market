@@ -12,6 +12,7 @@ class Routes
             'get' => [
                 '/' => 'LoginController@form',
                 '/login' => 'LoginController@form',
+                '/logout' => 'LoginController@logout',
 
                 '/dashboard' => 'DashboardController@index:authenticated',
                 '/products' => 'ProductController@index:authenticated',

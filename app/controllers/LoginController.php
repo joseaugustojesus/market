@@ -56,4 +56,11 @@ class LoginController extends Controller
         setSession('authenticated', $userFind);
         return redirect(route('dashboard'));
     }
+
+
+    public function logout()
+    {
+        session_destroy();
+        return redirect(route('login'));
+    }
 }
